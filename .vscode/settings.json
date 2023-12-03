@@ -16,4 +16,7 @@
     "watch": false
   },
   "terminal.integrated.scrollback": 100000,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }
