@@ -1,8 +1,6 @@
 export function getResult(line: string) {
   const matches: number[] = [];
   const cardLine = line.split(':');
-
-  const cardId = cardLine[0].slice(5);
   const cardValues = cardLine[1].split('|');
 
   const winningArray = cardValues[0].split(' ').filter((c) => c !== '');
@@ -17,9 +15,9 @@ export function getResult(line: string) {
   let points = 0;
 
   if (matches.length > 0) {
-    points = 1; // Start with 1 point for the first match
+    points = 1;
     for (let i = 1; i < matches.length; i++) {
-      points *= 2; // Double points for each subsequent match
+      points *= 2;
     }
   }
 
